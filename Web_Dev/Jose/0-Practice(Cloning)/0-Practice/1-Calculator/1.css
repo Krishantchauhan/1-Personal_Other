@@ -1,0 +1,43 @@
+body{
+  text-align: center;
+  /* display: flex; */
+  background-color: black;
+  border: 1px solid black;
+}
+
+label{
+  text-align: center;
+  border: 1px solid black;
+  background: aqua;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.two,.one{
+  border: 1px solid black;
+  margin: 20px;
+}
+#num-one,#num-two{
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 170px;
+  height: 30px;
+}
+
+.two{
+  margin-top: 80px;
+}
+#add,#sub,#divide,#mul{
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 6px;
+  background-image: repeating-linear-gradient(to right,deeppink,pink);
+}
+
+#res{
+  color: forestgreen;
+}

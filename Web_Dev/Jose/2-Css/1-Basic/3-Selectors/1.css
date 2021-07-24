@@ -1,0 +1,43 @@
+/* div{
+  color:red;
+} Yeh all div ko red kr de ga */
+
+
+/* Class ko hum .(dot) se start kr teh hai :) */
+.a{
+  color:blue;
+}
+
+.b{
+  color:red;
+}
+
+
+/* id ko # se start kr tae hai  */
+#pig{
+  color: green;
+  text-decoration: line-through;
+}
+
+/* css selectors w3schools :) */
+
+/* Yeh * select all hai sab ko overwrite kr de ga -----id ko levae kr ke  */
+/* *{
+  color:black
+} */
+
+h3 + ul {
+  border:4px dotted purple;
+}
+
+
+/* a->all anchor  upper wale variable hai yeh nhi hai */
+li a{
+  color : red;
+}
+
+
+li a[href="www.facebook.com"]{
+  color: blue;
+  border:3px solid orange;
+}

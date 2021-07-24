@@ -1,0 +1,33 @@
+/*
+Yeh Arial sab mein ho ta hai or har os ka alaga ho te hai like mac , linux ,windows
+ */
+
+h1{
+  font-family: "Arial";
+}
+
+
+p{
+  font-family: monospace;
+}
+
+body{
+  font-size: 1em;
+}
+
+
+#one{
+  font-size: 20px;
+}
+
+
+p{
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+
+h1{
+  text-align: center;
+}

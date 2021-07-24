@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/krishant_chauhan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:text="@string/the_ok_button_is_now_constrained_vertically_to_remain_lined_up_with_the_baseline_of_the_cancel_button_a_baseline_constraint_like_this_is_different_to_constraining_the_top_or_bottom_of_the_button_in_this_case_it_s_the_text_that_lines_up_so_if_the_buttons_are_different_heights_the_layout_looks_better_because_the_text_is_aligned_when_it_was_constrained_to_the_bottom_edge_of_the_layout_that_allowed_me_to_drag_it_up_and_down_the_screen_the_only_thing_that_changed_was_the_distance_from_the_bottom_of_the_layout_now_though_it_s_constrained_to_the_cancel_button_if_i_try_to_drag_it_up_or_down_nothing_happens_i_can_still_drag_it_left_or_right_which_just_changes_its_margin_from_the_cancel_button_but_it_can_no_longer_be_moved_up_or_down_even_cooler_watch_what_happens_when_i_drag_the_cancel_button_up_or_down_when_the_cancel_button_moves_up_or_down_the_ok_button_follows_it_because_of_the_vertical_constraint_whether_i_d_constrained_the_top_bottom_or_baseline_that_would_still_be_the_case_the_ok_button_can_t_be_moved_vertically_because_it_s_constrained_to_the_cancel_button_and_when_the_cancel_button_moves_vertically_the_ok_button_follows_notice_that_when_the_ok_button_s_selected_the_inspector_shows_a_downwards_arrow_to_indicate_that_there_is_a_constraint_but_you_can_t_change_the_margin_value_like_you_can_with_the_constraint_to_the_right_baseline_constraints_don_t_have_margins"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:text="@string/ok"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ball_100x100"
+        android:contentDescription="@string/todo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+.all{
+  border:1px solid darkgrey;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  border-radius: 6px;
+  /* font-family: monospace; */
+  background-image:repeating-radial-gradient(darkorange,lightpink);
+}
+body{
+  background-image:repeating-linear-gradient(to right ,orangered,tan);
+}
+.gehu{
+  border: 1px solid  #DAD2D8;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  border-radius: 6px;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight :lighter;
+  background-image: repeating-radial-gradient(red,pink);
+}
+
+h2{
+  line-height: 15px;;
+  font-weight: normal;
+}
+
+.one,.three,.five{
+  padding-left: 5px;
+  padding-top: 0px;
+  font-size: 15PX;
+  color: blueviolet;
+  margin-top: 8px;
+
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid darkgray;
+  /* background-image: repeating-linear-gradient(to left,darkviolet,violet); */
+  background-image: repeating-linear-gradient(to left,#4caf50,lightgreen);
+
+}
+
+.two,.four,.six{
+  padding-left: 15px;
+  border-radius: 10px;
+  margin-top: 8px;
+  /* background-color: #DAD2D8; */
+  border: 1px solid white;
+  font-size: 15PX;
+  background-image:linear-gradient(to right,red,orange);
+}
+
+.sub{
+  color: black;
+  font-size: 20px;
+  line-height: 4px;
+}
+
+span{
+  color:blue;
+}
+
+.milk{
+  text-align: center;
+  color: black;
+  border: 1px solid coral;
+  background-color: coral;
+  border-radius: 8px;
+  float: right;
+  padding: 10px;
+}
+
+.log{
+  /* float: right; */
+  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: #84c754;
+}
+
+.mod{
+  color:#84c754;
+  float: left;
+}
+.to{
+  background-color: black;
+  color: #84c754;
+}
+.in{
+  color: #84c754;
+  float: right;
+  /* color: lightseagreen; */
+
+}
+
+/* .pig{
+  background-image: url(os.png);
+  background-repeat: no-repeat;
+  background-size: 60px 40px ;
+  background-position: ;
+} */
+
+.login{
+  color: coral
+}
+
+
+.teacher{
+  padding-left: 70px;
+
+}

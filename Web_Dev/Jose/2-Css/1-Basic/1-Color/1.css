@@ -1,0 +1,25 @@
+/* Comment */
+
+
+/* selected tag{
+  property: values;
+} */
+
+
+
+h1{
+  color: blue;
+}
+
+li{
+  color : rgb(255,97,0);   //r->red  g->green   blue->blue
+}
+
+p{
+  color:#0895a8
+}
+
+
+h4{
+  color: rgba(255, 97, 0, 0.7);  //a- is alpha .1 to 1  greater value more darker and vice versa
+}

@@ -1,0 +1,21 @@
+body{
+  background-color: gray;
+}
+
+div{
+  background-color: blue;
+  border-color: red;
+  border-width: 10px;  /*thick , thin  yeh Keyword hain */
+  border-style: double;  /* double , dotted*/
+}
+
+
+p{
+  color: yellow;
+}
+
+
+span{
+  background: red;
+  color: black;
+}
