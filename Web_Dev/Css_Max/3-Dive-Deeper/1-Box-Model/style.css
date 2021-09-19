@@ -1,0 +1,19 @@
+#product-overview{
+  border: 5px black solid ;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ff1b68;
+}
+
+.section-title{
+  color: springgreen;
+}
+
+.main-header{
+  border: 2px solid black;
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
