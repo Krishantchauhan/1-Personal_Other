@@ -1,9 +1,9 @@
 #product-overview{
   border: 5px black solid ;
+  width: 98%;
+  height:450px;
   padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #ff1b68;
+  background: url("freedom.jpg");
 }
 
 .section-title{
@@ -12,8 +12,66 @@
 
 .main-header{
   border: 2px solid black;
-  width: 100%;
+  width: 97.4%;
   background-color: #2ddf5c;
   padding: 8px 16px;
   margin-bottom: 10px;
+}
+
+.main-header > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand{
+  color:#0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav{
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 70px);
+  vertical-align: middle;
+}
+
+.main-nav-item{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-item{
+  display: inline-block;
+  margin: 0 16px;
+
+}
+
+.main-nav-item a{
+  text-decoration: none;
+  color:#0e4f1f;
+  font-weight: bold;
+  padding: 3px 0px;
+}
+
+.main-nav-item a:hover,
+.main-nav-item a:active{
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav-item-c a{
+  color: antiquewhite;
+  background: red;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav-item-c a:hover,
+.main-nav-item-c a:active{
+  color: red;
+  background: white;
+  border: none;
 }
