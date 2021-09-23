@@ -1,0 +1,202 @@
+
+.plan{
+  background-color: #d5ffdc;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 29%;
+  vertical-align: middle;
+}
+
+.plan--highlighted{
+  background :#19b84c;
+   color: white;
+   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+.badge{
+  background: white;
+  color: #19b84c;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
+
+.features{
+  list-style:none;
+}
+
+.features li{
+  margin: 8px 0;
+}
+
+.plan-title{
+  color:#0e4f1f;
+}
+
+.plan-price{
+  color: #855885;
+}
+
+.plan--highlighted .plan-price{
+  color:#0e4f1f;
+}
+
+.plan--highlighted .plan-title{
+  color:white;
+}
+
+.button{
+  background: #0e4f1f;
+  color:white;
+  font: inherit;
+  border: 1.5px solid #000;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active{
+  background: white;
+  color:#0e4f1f;
+}
+
+.button:focus{
+  outline: none;
+}
+
+
+
+
+#product-overview{
+  border: 5px black solid ;
+  width: 98%;
+  height:450px;
+  padding: 10px;
+  background: url("freedom.jpg");
+}
+
+.section-title{
+  color: springgreen;
+  text-align: center;
+}
+
+.main-header{
+  border: 2px solid black;
+  width: 97.4%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
+
+.main-header > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand{
+  color:#0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav{
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 70px);
+  vertical-align: middle;
+}
+
+.main-nav-item{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-item{
+  display: inline-block;
+  margin: 0 16px;
+
+}
+
+.main-nav-item a{
+  text-decoration: none;
+  color:#0e4f1f;
+  font-weight: bold;
+  padding: 3px 0px;
+}
+
+.main-nav-item a:hover,
+.main-nav-item a:active{
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav-item-c a{
+  color: antiquewhite;
+  background: red;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav-item-c a:hover,
+.main-nav-item-c a:active{
+  color: red;
+  background: white;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer  */
+.main-footer{
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link{
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a{
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active{
+  color: #ccc;
+}
+
+
+/* Position Element making the static header */
+
+.main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97.49%;
+  z-index: 1;
+}
