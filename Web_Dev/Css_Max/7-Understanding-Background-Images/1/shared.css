@@ -1,5 +1,4 @@
-
-.plan{
+.plan {
   background-color: #d5ffdc;
   text-align: center;
   padding: 16px;
@@ -9,48 +8,47 @@
   vertical-align: middle;
 }
 
-.plan--highlighted{
-  background :#19b84c;
-   color: white;
-   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+.plan--highlighted {
+  background: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-
-.badge{
+.badge {
   background: white;
   color: #19b84c;
   padding: 8px;
-  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
 
-.features{
-  list-style:none;
+.features {
+  list-style: none;
 }
 
-.features li{
+.features li {
   margin: 8px 0;
 }
 
-.plan-title{
-  color:#0e4f1f;
+.plan-title {
+  color: #0e4f1f;
 }
 
-.plan-price{
+.plan-price {
   color: #855885;
 }
 
-.plan--highlighted .plan-price{
-  color:#0e4f1f;
+.plan--highlighted .plan-price {
+  color: #0e4f1f;
 }
 
-.plan--highlighted .plan-title{
-  color:white;
+.plan--highlighted .plan-title {
+  color: white;
 }
 
-.button{
+.button {
   background: #0e4f1f;
-  color:white;
+  color: white;
   font: inherit;
   border: 1.5px solid #000;
   padding: 8px;
@@ -60,36 +58,32 @@
 }
 
 .button:hover,
-.button:active{
+.button:active {
   background: white;
-  color:#0e4f1f;
+  color: #0e4f1f;
 }
 
-.button:focus{
+.button:focus {
   outline: none;
 }
 
-
-
-
-#product-overview{
+#product-overview {
   background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
-  width: 97.5%;
+  width: 98.7%;
   height: 650px;
   padding: 10px;
   margin-top: 70px;
-  border: 5px black solid ;
+  /* border: 5px black solid; */
   /* height:450px; */
   position: relative;
-
 }
 
-.section-title{
+.section-title {
   color: springgreen;
   text-align: center;
 }
 
-.main-header{
+.main-header {
   border: 2px solid black;
   width: 97.4%;
   background-color: #2ddf5c;
@@ -97,51 +91,54 @@
   margin-bottom: 10px;
 }
 
-.main-header > div{
+.main-header>div {
   display: inline-block;
   vertical-align: middle;
 }
 
-.brand{
-  color:#0e4f1f;
+/*  */
+.brand {
+  color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
+  /* for  uHost Logo  */
+  height: 22px;
+  display: inline-block;
 }
 
-.main-nav{
+.main-nav {
   display: inline-block;
   text-align: right;
   width: calc(100% - 70px);
   vertical-align: middle;
 }
 
-.main-nav-item{
+.main-nav-item {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav-item{
+.main-nav-item {
   display: inline-block;
   margin: 0 16px;
-
 }
 
-.main-nav-item a{
+.main-nav-item a {
   text-decoration: none;
-  color:#0e4f1f;
+  color: #0e4f1f;
   font-weight: bold;
   padding: 3px 0px;
 }
 
 .main-nav-item a:hover,
-.main-nav-item a:active{
+.main-nav-item a:active {
   color: white;
   border-bottom: 5px solid white;
 }
 
-.main-nav-item-c a{
+.main-nav-item-c a {
   color: antiquewhite;
   background: red;
   padding: 8px 16px;
@@ -149,58 +146,51 @@
 }
 
 .main-nav-item-c a:hover,
-.main-nav-item-c a:active{
+.main-nav-item-c a:active {
   color: red;
   background: white;
   border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* footer  */
-.main-footer{
+.main-footer {
   background: black;
   padding: 32px;
   margin-top: 48px;
 }
 
-.main-footer__links{
+.main-footer__links {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.main-footer__link{
+.main-footer__link {
   display: inline-block;
   margin: 0 16px;
 }
 
-.main-footer__link a{
+.main-footer__link a {
   color: white;
   text-decoration: none;
 }
 
 .main-footer__link a:hover,
-.main-footer__link a:active{
+.main-footer__link a:active {
   color: #ccc;
 }
 
-
 /* Position Element making the static header */
-
-.main-header{
+.main-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 97.49%;
   z-index: 1;
+}
+
+/* image logo uhost png */
+.brand img {
+  height: 100%;
 }
