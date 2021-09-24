@@ -73,11 +73,15 @@
 
 
 #product-overview{
-  border: 5px black solid ;
-  width: 98%;
-  height:450px;
+  background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
+  width: 97.5%;
+  height: 650px;
   padding: 10px;
-  background: url("freedom.jpg");
+  margin-top: 70px;
+  border: 5px black solid ;
+  /* height:450px; */
+  position: relative;
+
 }
 
 .section-title{
