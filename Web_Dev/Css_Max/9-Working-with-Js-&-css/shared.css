@@ -200,3 +200,8 @@ body {
   display: block;
   margin: 0.6rem 0;
 }
+
+/* For Js mobile */
+.open{
+  display: block !important;
+}
