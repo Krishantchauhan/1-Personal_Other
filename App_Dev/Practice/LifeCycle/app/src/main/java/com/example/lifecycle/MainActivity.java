@@ -1,0 +1,46 @@
+package com.example.lifecycle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.util.Log;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Log.d("msg","IN Method Class");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("msg","Start");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("msg","Resume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("msg","Pause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("msg","Stop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("msg","Destroy");
+    }
+}

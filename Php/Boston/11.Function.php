@@ -6,4 +6,4 @@ function test()
   }
 test();
 
- ?>
+?>
