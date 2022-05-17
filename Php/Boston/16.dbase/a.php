@@ -2,8 +2,6 @@
 //nhi ho paya
 //connection
 
-$dbc= mysql_connect('localhost','hr','hr');
-
+echo "krishants";
 
 ?>
-h1 {colour:blue;}

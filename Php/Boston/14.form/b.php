@@ -6,10 +6,10 @@
 $a= $_POST["a"];
 $b= $_POST["pass"];
 
-echo "Your Entred Name is :- ",$a."<br/>";
+echo "Name :- ",$a."<br/>";
 
 // h1 {colour:blue;};
-echo "pass",$b;
+echo "Pass :- ",$b;
 
 ?>
 
