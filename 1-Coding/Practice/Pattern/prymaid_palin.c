@@ -10,7 +10,6 @@
 
 
 #include <stdio.h>
-
 int main(void)
 {
     int k = 1;
