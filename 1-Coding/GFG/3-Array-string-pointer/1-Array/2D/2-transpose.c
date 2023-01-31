@@ -33,4 +33,14 @@ int main()
         }
         printf("\n");
     }
+
+    printf("ji  OR \n");
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            printf("%d\t", a[j][i]);
+        }
+        printf("\n");
+    }
 }
