@@ -4,7 +4,9 @@
 struct node
 {
     int data;
-    node *next;
+    node *next; // <- Its is call as self referenctial structure. it carries the current addres.
+
+    //It is a constructor . we can also make a function but constructor is a better choice.
     node(int x)
     {
         data=x;
@@ -33,19 +35,6 @@ int disp(node *head){
 
 
 
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// struct node
-// {
-//     int data;
-//     node *next;
-//     node(int x)
-//     {
-//         data=x;
-//         next=NULL;
-//     }
-// };
 
 //  int main()
 //  {
@@ -56,5 +45,4 @@ int disp(node *head){
 //    head->next=temp1;
 //    temp1->next=temp2;
 //    return 0;
-
-// }
+//   }
