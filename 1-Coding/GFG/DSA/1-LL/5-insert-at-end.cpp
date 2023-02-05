@@ -32,22 +32,23 @@ int disp(node *head){
 // }
 
 //Using INT
-int end(node *head,int x){
+void end(node* &head,int x){
     node *newnode = new node(x);
-    if(head ==NULL)
-        head=newnode;
     node *curr=head;
+    if(head == NULL)
+        head=newnode;
+    else{
     while (curr->next!=NULL)
         curr=curr->next;
     curr->next=newnode;
-    return 0;
+    }
 }
 
 
 int main()
 {
     node *head=NULL;
-    head=new node(10);
+    // head=new node(10);
     // head =end(head,20);
     // head =end(head,30);
     // head =end(head,40);

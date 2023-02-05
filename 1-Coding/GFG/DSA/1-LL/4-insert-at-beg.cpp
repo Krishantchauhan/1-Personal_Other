@@ -30,9 +30,8 @@ int main()
 {
     node *head=NULL;
     head =beg(head,20);
-    head =beg(head,30);
-    head =beg(head,40);
-
+    // head =beg(head,30);
+    // head =beg(head,40);
     disp(head);
     return 0;
 }
