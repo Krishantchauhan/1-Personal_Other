@@ -90,24 +90,88 @@
 // }
 
 // move zeros to end
-void swap(int *i, int *count)
-{
-    int temp = *i;
-    *i = *count;
-    *count = temp;
-}
+// void swap(int *i, int *count)
+// {
+//     int temp = *i;
+//     *i = *count;
+//     *count = temp;
+// }
+// int main()
+// {
+//     int a[] = {12, 20, 0, 6, 40};
+//     int count = 0;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         if (a[i] != 0)
+//         {
+//             swap(&a[i], &a[count]);
+//             count++;
+//         }
+//     }
+//     for (int i = 0; i < 5; i++)
+//         printf("%d ", a[i]);
+// }
+
+// rotate counter clock wise (left) by 1
+//
+// int main()
+// {
+//     int a[] = {12, 34, 10, 6, 40};
+//     int s = sizeof(a) / sizeof(a[0]);
+//     // printf("%d", s);
+
+//     int low = a[0];
+//       for(int i=0;i<s;i++)
+//         a[i] = a[i+1];
+//       a[s-1]=low;
+
+//       for(int i=0;i<s;i++)
+//       {
+//          printf("%d ",a[i]) ;
+//       }
+// }
+
+// rotate counter clock wise (left) by d times
+// naive 
+// int main()
+// {
+//     int a[] = {1, 22, 3, 4, 5};
+//     int s = sizeof(a) / sizeof(a[0]);
+//     // printf("%d", s);
+//     int n = 2;
+//     while (n != 0)
+//     {
+//         int low = a[0];
+//         for (int i = 0; i < s; i++)
+//             a[i - 1] = a[i];
+//         a[s - 1] = low;
+//         n--;
+//     }
+
+//     for (int i = 0; i < s; i++)
+//     {
+//         printf("%d ", a[i]);
+//     }
+// }
+
+//
 int main()
 {
-    int a[] = {12, 0, 0, 6, 40};
-    int count = 0;
-    for (int i = 0; i < 5; i++)
+    int a[] = {1, 22, 3, 4, 5};
+    int s = sizeof(a) / sizeof(a[0]);
+    // printf("%d", s);
+    int n = 2;
+    while (n != 0)
     {
-        if (a[i] != 0)
-        {
-            swap(&a[i], &a[count]);
-            count++;
-        }
+        int low = a[0];
+        for (int i = 0; i < s; i++)
+            a[i - 1] = a[i];
+        a[s - 1] = low;
+        n--;
     }
-    for (int i = 0; i < 5; i++)
+
+    for (int i = 0; i < s; i++)
+    {
         printf("%d ", a[i]);
+    }
 }
