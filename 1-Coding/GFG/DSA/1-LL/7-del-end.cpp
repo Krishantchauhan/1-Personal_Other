@@ -22,7 +22,7 @@ void disp(node* head){
 void delend(node* &head){
     node* curr=head;
 
-    if(curr==NULL)
+    if(head==NULL)
         printf("Linked List is Empty :(");
     if(head->next==NULL){
         free(head->next);
@@ -35,7 +35,7 @@ void delend(node* &head){
         free(curr->next);
         curr->next=NULL;
     }
-    // disp(head);
+    disp(head);
 }
 
 int main()
@@ -44,6 +44,7 @@ int main()
     node* head=NULL;
     head = new node(10);
     head->next = new node(20);
+    head->next->next = new node(30);
     delend(head);
-    disp(head);
+    // disp(head);
 }
