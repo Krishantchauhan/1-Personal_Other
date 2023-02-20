@@ -132,7 +132,7 @@
 // }
 
 // rotate counter clock wise (left) by d times
-// naive 
+// naive
 // int main()
 // {
 //     int a[] = {1, 22, 3, 4, 5};
@@ -155,23 +155,88 @@
 // }
 
 //
+// int main()
+// {
+//     int a[] = {1, 22, 3, 4, 5};
+//     int s = sizeof(a) / sizeof(a[0]);
+//     // printf("%d", s);
+//     int n = 2;
+//     while (n != 0)
+//     {
+//         int low = a[0];
+//         for (int i = 0; i < s; i++)
+//             a[i - 1] = a[i];
+//         a[s - 1] = low;
+//         n--;
+//     }
+
+//     for (int i = 0; i < s; i++)
+//     {
+//         printf("%d ", a[i]);
+//     }
+// }
+
+// Leader Element
+// naive
+// int main()
+// {
+//     int a[] = {1, 120, 8, 9, 15};
+//     int s = sizeof(a) / sizeof(a[0]);
+
+//     for (int i = 0; i < s; i++)
+//     {
+//         int count = 0;
+//         for (int j = i + 1; j < s; j++)
+//         {
+//             if (a[i] >= a[j])
+//                 count = 1;
+//             else{
+//                 count=0;
+//                 break;
+//             }
+//         }
+//         if (count == 1 || i==s-1)
+//             printf("%d ", a[i]);
+//     }
+// }
+
+// Or naive
+//  int main()
+//  {
+//      int a[] = {1, 120, 8, 9, 15};
+//      int s = sizeof(a) / sizeof(a[0]);
+
+//     for (int i = 0; i < s; i++)
+//     {
+//         int count = 0;
+//         for (int j = i + 1; j < s; j++)
+//         {
+//             if (a[i] <= a[j]){
+//                 count = 1;
+//                 break;
+//             }
+//         }
+//         if (count == 0 || i==s-1)
+//             printf("%d ", a[i]);
+//     }
+// }
+
+// efficient leder element
+// but it print reverse
+// basically start from right side
 int main()
 {
-    int a[] = {1, 22, 3, 4, 5};
+    int a[] = {1, 120, 8, 91, 15};
     int s = sizeof(a) / sizeof(a[0]);
-    // printf("%d", s);
-    int n = 2;
-    while (n != 0)
-    {
-        int low = a[0];
-        for (int i = 0; i < s; i++)
-            a[i - 1] = a[i];
-        a[s - 1] = low;
-        n--;
-    }
 
-    for (int i = 0; i < s; i++)
+    int curr = a[s - 1];
+    printf("%d ", curr);
+    for (int i = s - 2; i > 0; i--)
     {
-        printf("%d ", a[i]);
+        if (a[i] > curr)
+        {
+            curr = a[i];
+            printf("%d ", a[i]);
+        }
     }
 }
