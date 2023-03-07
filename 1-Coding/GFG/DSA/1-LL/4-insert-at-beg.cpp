@@ -19,6 +19,7 @@ int disp(node *head){
     return 0;
 }
 
+
 node *beg(node *head,int f)
 {
     node *temp=new node(f);
