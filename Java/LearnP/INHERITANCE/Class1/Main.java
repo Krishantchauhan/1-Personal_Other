@@ -9,9 +9,10 @@ public class Main {
         car.setbrand("BMW");
         car.setcolor("Blue");
 
-        // System.out.println("Brand " + car.brand);
+        //CE
+        //  System.out.println("Brand " + car.brand);
         // resolved vy getter method
-        System.out.println(" " + car.getBrand());
+        // System.out.println(" " + car.getBrand());
 
         car.describeCar();
         
