@@ -45,31 +45,31 @@
 // }
 
 // Second Maxxx
-//  int main()
-//  {
-//      int a[] = {12, 34, 10, 6, 40};
-//      int max = a[0];
-//      for (int i = 0; i < 5; i++)
-//      {
-//          if (a[i] > max)
-//          {
-//              max = a[i];
-//          }
-//      }
-//      int smax = a[0];
-//      for (int i = 0; i < 5; i++)
-//      {
-//          if (a[i] != max)
-//          {
-//              if (a[i] > smax)
-//              {
-//                  smax = a[i];
-//              }
-//          }
-//      }
-//      printf("%d  ", max);
-//      printf("%d  ", smax);
-//  }
+ int main()
+ {
+     int a[] = {39, 34, 10, 6, 40};
+     int max = a[0];
+     for (int i = 0; i < 5; i++)
+     {
+         if (a[i] > max)
+         {
+             max = a[i];
+         }
+     }
+     int smax = a[0];
+     for (int i = 0; i < 5; i++)
+     {
+         if (a[i] != max)
+         {
+             if (a[i] > smax)
+             {
+                 smax = a[i];
+             }
+         }
+     }
+     printf("%d  ", max);
+     printf("%d  ", smax);
+ }
 
 // Reverse array
 
@@ -224,19 +224,19 @@
 // efficient leder element
 // but it print reverse
 // basically start from right side
-int main()
-{
-    int a[] = {1, 120, 8, 91, 15};
-    int s = sizeof(a) / sizeof(a[0]);
+// int main()
+// {
+//     int a[] = {1, 120, 8, 91, 15};
+//     int s = sizeof(a) / sizeof(a[0]);
 
-    int curr = a[s - 1];
-    printf("%d ", curr);
-    for (int i = s - 2; i > 0; i--)
-    {
-        if (a[i] > curr)
-        {
-            curr = a[i];
-            printf("%d ", a[i]);
-        }
-    }
-}
+//     int curr = a[s - 1];
+//     printf("%d ", curr);
+//     for (int i = s - 2; i > 0; i--)
+//     {
+//         if (a[i] > curr)
+//         {
+//             curr = a[i];
+//             printf("%d ", a[i]);
+//         }
+//     }
+// }
