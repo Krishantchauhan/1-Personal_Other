@@ -18,7 +18,7 @@ int main()
     else if (c == 1)
     {
         for (int i = 0; i < r; i++)
-            printf("%d ", a[0][i]);
+            printf("%d ", a[i][0]);
     }
     else
     {
