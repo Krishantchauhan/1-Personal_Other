@@ -18,7 +18,8 @@ int peak(int a[], int n)
 
 int main()
 {
-    int a[5] = {6, 7, 8, 20, 12};
+    // int a[5] = {6, 7, 8, 20, 12};
+    int a[3] = {1, 2, 3};
     int size = sizeof(a) / sizeof(a[0]);
 
     int store = peak(a, size);
