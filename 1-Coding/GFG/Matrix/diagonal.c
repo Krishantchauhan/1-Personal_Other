@@ -30,22 +30,19 @@ int main()
         {
             if (r % 2 == 0)
             {
-                if (1)
+                if (i < r / 2)
                 {
-                    if (i < r / 2)
-                    {
-                        low++;
-                        high--;
-                    }
-                    if (i > r / 2)
-                    {
-                        low--;
-                        high++;
-                    }
-                    temp = a[i][low];
-                    a[i][low] = a[i][high];
-                    a[i][high] = temp;
+                    low++;
+                    high--;
                 }
+                if (i > r / 2)
+                {
+                    low--;
+                    high++;
+                }
+                temp = a[i][low];
+                a[i][low] = a[i][high];
+                a[i][high] = temp;
             }
             if (r % 2 != 0)
             {
