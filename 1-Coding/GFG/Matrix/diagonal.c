@@ -46,21 +46,18 @@ int main()
             }
             if (r % 2 != 0)
             {
-                if (low <= high)
+                temp = a[i][low];
+                a[i][low] = a[i][high];
+                a[i][high] = temp;
+                if (i < r / 2)
                 {
-                    temp = a[i][low];
-                    a[i][low] = a[i][high];
-                    a[i][high] = temp;
-                    if (i < r / 2)
-                    {
-                        low++;
-                        high--;
-                    }
-                    else
-                    {
-                        low--;
-                        high++;
-                    }
+                    low++;
+                    high--;
+                }
+                else
+                {
+                    low--;
+                    high++;
                 }
             }
         }
