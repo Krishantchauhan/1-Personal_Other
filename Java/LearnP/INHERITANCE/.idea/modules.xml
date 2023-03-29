@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Constructor_challenge/Constructor_challenge.iml" filepath="$PROJECT_DIR$/Constructor_challenge/Constructor_challenge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/INHERITANCE.iml" filepath="$PROJECT_DIR$/INHERITANCE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance.iml" />
     </modules>
   </component>
 </project>
