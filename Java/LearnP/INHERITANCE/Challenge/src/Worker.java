@@ -4,8 +4,6 @@ public class Worker {
     String endDate;
 
 
-
-
     public Worker(String name, String dob) {
         this.name = name;
         this.dob = dob;
