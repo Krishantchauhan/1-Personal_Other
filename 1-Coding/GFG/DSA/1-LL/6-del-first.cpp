@@ -21,14 +21,13 @@ int disp(node *head)
     return 0;
 }
 
-int del(node *head)
+void del(node* &head)
 {
     if(head==NULL)
         head=NULL;
-    node *temp = head->next;
-    head = temp;
-    disp(head);
-    return 0;
+    node *temp = head;
+    head = temp->next;
+    free(temp);
 }
 
 // while(head!=NULL)
