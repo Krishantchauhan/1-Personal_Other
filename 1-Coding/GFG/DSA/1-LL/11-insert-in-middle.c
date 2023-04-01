@@ -34,24 +34,30 @@ void insert(int x)
     }
 }
 
-void sort(int x)
+void middle(int x)
 {
     node *curr = head;
     node *nn = (node *)malloc(sizeof(node));
     nn->data = x;
     nn->next = NULL;
-
-    if (head == 0)
-        head = nn;
-    else if (x < head->data)
-        nn->next = head;
-    else
+    int count = 0;
+    while (curr != 0)
     {
-        while (curr->next != 0 && curr->next->data < x)
-            curr = curr->next;
-        nn->next = curr->next;
-        curr->next = nn;
+        count++;
+        curr = curr->next;
     }
+
+    curr = head;
+    // for (int i = 1; i < count / 2; i++)
+    //     curr = curr->next;
+    count = count / 2;
+    while (count--)
+    {
+        curr = curr->next;
+    }
+
+    nn->next = curr->next;
+    curr->next = nn;
 }
 
 int main()
@@ -61,7 +67,8 @@ int main()
     insert(20);
     insert(30);
     insert(40);
+    // insert(50);
 
-    sort(25);
+    middle(25);
     disp();
 }
