@@ -1,62 +1,72 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-struct node{
+struct node
+{
     int data;
-    node* next;
-    node(int x){
-        data=x;
-        next=NULL;
+    node *next;
+    node(int x)
+    {
+        data = x;
+        next = NULL;
     }
 };
 
-void disp(node* head){
+void disp(node *head)
+{
     printf("\n");
-    while(head!=NULL)
+    while (head != NULL)
     {
-        printf("%d ",head->data);
-        head=head->next;
+        printf("%d ", head->data);
+        head = head->next;
     }
     printf("\n");
 }
-void delend(node* &head){
-    node* curr=head;
+void delend(node *&head)
+{
+    node *curr = head;
 
-    if(head==NULL)
+    if (head == NULL)
         printf("Linked List is Empty :(");
-    if(head->next==NULL){
+    if (head->next == NULL)
+    {
         free(head->next);
-        head=NULL;
+        head = NULL;
         printf("Now Its Empty ");
     }
-    else{
-        while(curr->next->next!=NULL)
-            curr=curr->next;
+    else
+    {
+        while (curr->next->next != NULL)
+            curr = curr->next;
         free(curr->next);
-        curr->next=NULL;
+        curr->next = NULL;
     }
     // disp(head);
 }
 
-//Method 2
-//storing previous node
-void delend_2(node* &head){
-    node* curr=head;
-    node*p =head;
-    if(head==NULL)
+// Method 2
+// storing previous node
+void delend_2(node *&head)
+{
+    node *curr = head;
+    node *p = head;
+    if (head == NULL)
         printf("Linked List is Empty :(");
-    if(head->next==NULL){
+    else if (head->next == NULL)
+    {
         free(head->next);
-        head=NULL;
+        head = NULL;
         printf("Now Its Empty ");
     }
-    else{
-        while(curr->next!=NULL){
-            p=curr;
-            curr=curr->next;
+    else
+    {
+        while (curr->next != NULL)
+        {
+            p = curr;
+            curr = curr->next;
         }
         free(curr->next);
-        p->next=NULL;
+        p->next = NULL;
     }
     // disp(head);
 }
@@ -64,7 +74,7 @@ void delend_2(node* &head){
 int main()
 {
 
-    node* head=NULL;
+    node *head = NULL;
     head = new node(10);
     head->next = new node(20);
     head->next->next = new node(30);
