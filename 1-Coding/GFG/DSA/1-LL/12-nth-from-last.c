@@ -54,11 +54,13 @@ void n_th_last(int x)
 
     if (x > count)
         printf("NOt POssible");
-
-    int k = count - x + 1;
-    for (int i = 1; i < k; i++)
-        temp = temp->next;
-    printf("%d", temp->data);
+    else
+    {
+        int k = count - x + 1;
+        for (int i = 1; i < k; i++)
+            temp = temp->next;
+        printf("%d", temp->data);
+    }
 }
 
 int main()
@@ -70,6 +72,6 @@ int main()
     insert(40);
     insert(50);
 
-    n_th_last(4);
+    n_th_last(6);
     // disp();
 }

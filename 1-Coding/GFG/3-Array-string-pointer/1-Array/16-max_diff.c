@@ -3,8 +3,8 @@
 int main()
 {
     int s = 7;
-    // int a[7] = {1, 6, 10, 6, 4, 88, 1};
-    int a[4] = {30, 10, 8, 2};
+    int a[7] = {1, 6, 10, 6, 4, 88, 1};
+    // int a[4] = {30, 10, 8, 2};
     int max = 0;
     for (int i = 0; i < s; i++)
     {
@@ -19,5 +19,5 @@ int main()
     }
 
     diff = a[max] - a[min];
-    printf("diff is %d", diff);
+    printf("diff is %d ", diff);
 }
