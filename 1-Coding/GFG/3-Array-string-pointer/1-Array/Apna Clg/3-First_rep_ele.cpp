@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     // your code goes here
-    int a[] = {1, 2, 3, 4, 3, 5, 6};
+    int a[] = {1, 5, 3, 4, 3, 5, 6};
     int s = 7;
 
     const int N = 1e6 + 2;
