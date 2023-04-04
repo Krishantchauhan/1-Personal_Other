@@ -69,6 +69,6 @@ int main()
     insert(40);
     // insert(50);
 
-    middle(25);
+    middle(5);
     disp();
 }
