@@ -13,12 +13,12 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        currsum+=a[i];
-        if(a[i]<0)
-            currsum=0;
-        maxsum = max(maxsum,currsum);
+        currsum += a[i];
+        if (a[i] < 0)
+            currsum = 0;
+        maxsum = max(maxsum, currsum);
     }
 
-    printf("%d",maxsum);
-    return 0 ;
+    printf("%d", maxsum);
+    return 0;
 }
