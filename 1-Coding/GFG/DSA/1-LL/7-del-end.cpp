@@ -71,6 +71,29 @@ void delend_2(node *&head)
     // disp(head);
 }
 
+void delend_sec(node *&head)
+{
+    node *curr = head;
+
+    if (head == NULL)
+        printf("Linked List is Empty :(");
+    if (head->next == NULL)
+    {
+        free(head->next);
+        head = NULL;
+        printf("Now Its Empty ");
+    }
+    else
+    {
+        while (curr->next->next->next != NULL)
+            curr = curr->next;
+        node *temp = curr->next->next;
+        free(curr->next);
+        curr->next = temp;
+    }
+    // disp(head);
+}
+
 int main()
 {
 
@@ -78,8 +101,9 @@ int main()
     head = new node(10);
     head->next = new node(20);
     head->next->next = new node(30);
-    head->next->next->next  = new node(40);
-    head->next->next->next->next  = new node(50);
-    delend_2(head);
+    head->next->next->next = new node(40);
+    head->next->next->next->next = new node(50);
+    // delend_2(head);
+    delend_sec(head)
     disp(head);
 }
