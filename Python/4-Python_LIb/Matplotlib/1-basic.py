@@ -8,4 +8,7 @@ print(x)
 print(y)
 
 plt.plot(x,y)
+plt.xlabel("X Label")
+plt.ylabel("Y Label")
+plt.title("Square")
 plt.show()
