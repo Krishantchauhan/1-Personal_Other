@@ -24,7 +24,7 @@ int main()
 {
     int a[7] = {1, 20, 20, 20, 30, 30, 70};
     int size = sizeof(a) / sizeof(a[0]);
-    int key = 20;
+    int key = 30;
     int f = lasttocc(a, size, key);
     printf("%d", f);
 
