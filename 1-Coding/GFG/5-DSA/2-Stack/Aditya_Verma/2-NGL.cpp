@@ -26,7 +26,7 @@ void ngr(std::vector<int> arr, int n)
         }
         st.push(arr[i]);
     }
-    printf("\n\nNGR\n");
+    printf("\n\nNGL\n");
     for (auto i : ans)
         printf("%d ", i);
 }
