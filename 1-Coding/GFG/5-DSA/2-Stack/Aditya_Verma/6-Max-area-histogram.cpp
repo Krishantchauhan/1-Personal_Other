@@ -11,7 +11,7 @@ void histogram(std::vector<int> arr, int n)
 
     // NSL
     vector<int> left;
-    stack<pair<int, int> > st1;
+    stack<pair<int, int>> st1;
 
     for (int i = 0; i < n; i++)
     {
@@ -33,7 +33,7 @@ void histogram(std::vector<int> arr, int n)
 
     // For NSR
     vector<int> right;
-    stack<pair<int, int> > st2;
+    stack<pair<int, int>> st2;
 
     for (int i = n - 1; i >= 0; i--)
     {
