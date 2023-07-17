@@ -1,6 +1,5 @@
 // Stack Nearest Smallest to Left
 
-// stack nearest greater to Left
 #include <iostream>
 #include <vector>
 #include <stack>
