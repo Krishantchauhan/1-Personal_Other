@@ -18,9 +18,7 @@ vector<int> maxInSubarraysOfSizeK(vector<int> &arr, int k)
 
         q.push_back(arr[high]);
         if (high - low + 1 < k)
-        {
             high++;
-        }
         else if (high - low + 1 == k)
         {
             ans.push_back(q.front());
