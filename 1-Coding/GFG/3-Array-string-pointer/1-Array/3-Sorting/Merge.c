@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void merge(int arr[], int low, int mid, int high)
 {
     int leftSize = mid - low + 1;
@@ -37,4 +39,23 @@ void mergeSort(int arr[], int l, int r)
         mergeSort(arr, m + 1, r);
         merge(arr, l, m, r);
     }
+}
+
+int main()
+{
+    int arr[] = {7, 2, 5, 3, 1};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Array: \n");
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
+    mergeSort(arr, 0, n - 1);
+
+    printf("\nSorted array: ");
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
+    printf("\n");
+
+    return 0;
 }
