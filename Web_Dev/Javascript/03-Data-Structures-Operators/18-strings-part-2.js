@@ -13,8 +13,9 @@ console.log(passengerCorrect); // Output: Siya
 
 // Check email
 const email = 'hello@siya.io';
-const loginEmail = ' Hello@Siya.IO \n';
-const normalizedEmail = loginEmail.toLowerCase().trim();
+const loginEmail = '    Hello@Siya.IO \n';
+const normalizedEmail = loginEmail.toLowerCase().trim();//->trim ignore space and \n
+const normalizedEmail1 = loginEmail.toLowerCase();
 console.log(normalizedEmail === email); // Output: true
 
 // Replacing
@@ -22,10 +23,12 @@ const priceGB = '288,98£';
 const priceUS = priceGB.replace('£', '$').replace(',', '.');
 console.log(priceUS); // Output: 288.98$
 
+
 const announcement =
   'All passengers come to boarding door 23. Boarding door 23!';
 console.log(announcement.replaceAll('door', 'gate'));
 // Output: All passengers come to boarding gate 23. Boarding gate 23!
+
 
 // Booleans
 const plane = 'Airbus A320neo';

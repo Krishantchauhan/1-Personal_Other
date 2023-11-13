@@ -1,5 +1,5 @@
 'use strict';
-
+// Allows Abstraction
 const oneWord = function (str) {
   return str.replaceAll(' ', '').toLowerCase();
 };
@@ -13,7 +13,7 @@ const upperFirstWord = function (str) {
 const transformer = function (str, fn) {
   console.log(str);
   console.log(`Transformed string: ${fn(str)}`);
-  console.log(`Transformed by: ${fn.name}`);
+  console.log(`Transformed by: ${fn.name}`); // ---------->give the function name
 };
 
 transformer('JavaScript is the best!', upperFirstWord);
