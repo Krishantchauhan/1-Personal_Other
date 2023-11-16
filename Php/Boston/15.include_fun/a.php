@@ -1,6 +1,0 @@
-<?php
-
-echo "Easy Buddy "
-
-
-?>
