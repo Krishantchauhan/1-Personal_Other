@@ -2,7 +2,7 @@
 
 function test()
   {
-    echo "easy";
+    echo "Krishant";   
   }
 test();
 
