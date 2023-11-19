@@ -1,15 +1,14 @@
 <?php
 
-$people=array('tom','jake','tommy');
+$people=array('Krishant','Krish','Iya');
 
 echo $people[2]."<br/>";
-
 
 echo "Looooooooooop"."<br/>";
 
 
 for ($i=0; $i < 3; $i++) {
-  // code...
+
   echo $people[$i]."<br/>";
 }
 
