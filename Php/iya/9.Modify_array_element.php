@@ -1,7 +1,7 @@
 <?php
 $name[0]='tom';
-$name[1]="greg";
-$name[2]="pig";
+$name[1]="Krish";
+$name[2]="Iya";
 
 // echo $name[0];
 
