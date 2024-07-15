@@ -69,7 +69,6 @@ const {
 } = openingHours;
 console.log(o, c); // → 11 23
 
-
 // Check orderDelivery method
 restaurant.orderDelivery({
   time: '22:30',
