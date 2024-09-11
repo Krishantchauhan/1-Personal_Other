@@ -82,7 +82,7 @@
 
 // window.addEventListener('keydown', getKey);
 
-// console.log(list);
+console.log(list);
 
 //todo: Event bubbling
 // button.addEventListener('click', (e) => {
