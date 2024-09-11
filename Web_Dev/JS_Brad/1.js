@@ -45,4 +45,4 @@ const maping = companies.map((item) => item.category);
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const sq = nums.map((item) => Math.sqrt(item)).map((sqrt) => sqrt * 2);
-console.log(sq);
+// console.log(sq);
