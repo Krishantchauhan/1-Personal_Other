@@ -43,3 +43,11 @@ if (restaurant.orderPizza) {
 
 // The if statement before gave same result as this line
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach'); // → mushrooms (1) ['spinach']
+
+const abss = red;
+let gre = '#0e9692';
+
+
+
+
+
