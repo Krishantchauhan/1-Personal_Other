@@ -82,10 +82,14 @@
 
 // window.addEventListener('keydown', getKey);
 
-console.log(list);
+// console.log(list);
 
 //todo: Event bubbling
 // button.addEventListener('click', (e) => {
 //   alert('Button was clicked');
 //   e.stopPropagation();
 // });
+
+const test = document.querySelector('.key');
+const add ;
+
